@@ -1,0 +1,13 @@
+/* This displays a black border around tables and forms */
+table, form {
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+/* This puts padding around table cells and aligns the value to the center */
+th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }

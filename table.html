@@ -1,0 +1,85 @@
+<!-- I created a website that includes the following:
+    a.	A Bootstrap navbar
+    b.	A Bootstrap styled table
+    c.	A Bootstrap styled form
+    d.	A Bootstrap grid is used throughout to format elements and elements 
+        stack vertically when the window is small.
+    The page, table.html, is the secondary page and it links to the
+    main page, index.html, which contains the grid and form.
+ -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- This is the Navbar which contains one menu item, Stories, which links to table.html.  4
+        and collapses down to a hamburger menu when the window is narrow -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand">Fathers of New England</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navBarItems">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- This is the table containing meaningless values -->
+        <div class="container-fluid">
+            <table class="col-sm-9">
+                <thead class="thead-dark"></thead>
+                    <tr>
+                        <th>Col1</th>
+                        <th>Col2</th>
+                        <th>Col3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Val1</td>
+                        <td>Val2</td>
+                        <td>Val3</td>
+                    </tr>
+                    <tr>
+                        <td>Val4</td>
+                        <td>Val5</td>
+                        <td>Val6</td>
+                    </tr>
+                    <tr>
+                        <td>Val7</td>
+                        <td>Val8</td>
+                        <td>Val9</td>
+                    </tr>
+                    <tr>
+                        <td>Val10</td>
+                        <td>Val11</td>
+                        <td>Val12</td>
+                    </tr>
+                    <tr>
+                        <td>Val13</td>
+                        <td>Val14</td>
+                        <td>Val15</td>
+                    </tr>
+                    <tr>
+                        <td>Val4</td>
+                        <td>Val5</td>
+                        <td>Val6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

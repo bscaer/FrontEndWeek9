@@ -1,0 +1,78 @@
+<!-- I created a website that includes the following:
+    a.	A Bootstrap navbar
+    b.	A Bootstrap styled table
+    c.	A Bootstrap styled form
+    d.	A Bootstrap grid is used throughout to format elements and elements 
+        stack vertically when the window is small.
+    The page, index.html, is the main page and it links to the
+    secondary page, table.html, which contains the table.
+ -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- This is the Navbar which contains one menu item, Stories, which links to table.html.  4
+        and collapses down to a hamburger menu when the window is narrow -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <span class="navbar-brand">Fathers of New England</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navBarItems">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Stories</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- This is the grid of pictures that collapses to a vertical list when the window is narrow. -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 m-2">
+                    <h5>Father #1</h5>
+                    <img width="150" src="images/dad1.jpg">
+                </div>
+                <div class="col-sm-3 m-2">
+                    <h5>Father #2</h5>
+                    <img width="150" src="images/dad2.jpg">
+                </div>
+                <div class="col-sm-3 m-2">
+                    <h5>Father #3</h5>
+                    <img width="150" src="images/dad3.jpg">
+                </div>
+                <div class="col-sm-3 m-2">
+                    <h5>Father #4</h5>
+                    <img width="150" src="images/dad4.jpg">
+                </div>
+                <div class="col-sm-3 m-2">
+                    <h5>Father #5</h5>
+                    <img width="150" src="images/dad5.jpg">
+                </div>
+                <div class="col-sm-3 m-2">
+                    <h5>Father #6</h5>
+                    <img width="150" src="images/dad6.jpg">
+                </div>
+            </div>
+
+            <!-- This is the form that allows the user to subscribe to the newsletter. -->
+            <form class="form-inline col-sm-9">
+                <div class="row col-sm-12">
+                    <label class="col-sm-2 m-2" for="exampleInputEmail1">Subscribe</label>
+                    <input class="col-sm-6 m-2" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <button class="col-sm-3 m-2" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
